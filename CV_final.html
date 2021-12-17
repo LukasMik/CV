@@ -4,57 +4,61 @@
 
 <head>
     <title>My CV</title>
-    <link rel="stylesheet" href="css/style 2.css">
+    <!-- <link rel="stylesheet" href="/assets/css/style 2.css"> -->
+    <link rel="stylesheet" href="/assets/less_sandbox/css/main.css">
 </head>
 
 <body>
     <header>
-        <a href="img/Portret.png" target="_blank"><img src="img/Portret.png" id="Portret" alt="Portret photo" title="View full photo"></a>
-        <h1>LUKÁŠ MIKULÁŠTÍK</h1><br>
-        <p>Junior Web designer & Web developer</p>
-        <div class="description">
-            <p><em><strong>Hello, my name is Lukáš Mikuláštík</strong> and I'm a Junior Web designer & Junior Web
-                    developer from Brno, Czech Republic. <br> After two years as a project manager I realized that I
-                    like the job about leading people and implement things or projects but also I realized that building
-                    surrounding is not what I'm looking for so I decided to change my carrier path to IT wich I was
-                    close since I was kid.</em></p>
+        <div class="container">
+            <a href="/assets/img/Portret.png" target="_blank"><img src="/assets/img/Portret.png" id="Portret" alt="Portret photo" title="View full photo"></a>
+            <h1>LUKÁŠ MIKULÁŠTÍK</h1><br>
+            <p>Junior Web designer & Web developer</p>
+            <div>
+                <p class="p1"><em><strong>"Hello, my name is Lukáš Mikuláštík,</strong><br>I'm a Junior Web designer & Junior Web
+                        developer from Brno, Czech Republic.</p>
+                <p class="p2"><em>After two years as a project manager and almost 5 years as a building designer I realized that I
+                        like the job about leading people and implement things or projects but also I realized that building
+                        surrounding is not what I'm looking for so I decided to change my carrier path to IT wich I was
+                        close since I was kid."</em></p>
+            </div>
         </div>
     </header>
+    <div class="polygon"></div>
 
     <main>
-        <div class="flex-container">
-            <div class="Profile">
-                <div class="border-bottom">
-                    <h2>Profile</h2>
-                </div>
+        <div class="grid-container container">
+            <div class="profile">
+                <h2>Profile</h2>
                 <h3>Full name</h3>
                 <p>Lukáš Mikuláštík</p>
                 <h3>Born</h3>
                 <p>02 February 1998<br>Zlín, Czech Republic</p>
                 <h3>Contact</h3>
-                <div class="contacts">
-                    <a href="mailto:mikulastik@email.cz"><img src="img/at.png" alt="at" title="send me an email" width="15px"> luk.mikulastik@gmail.com</a>
+                <p class="contacts">
+                    <a href="mailto:luk.mikulastik@gmail.com"><img src="/assets/img/at.png" alt="at" title="send me an email" width="15px">luk.mikulastik@gmail.com</a>
                     <br>
-                    <a href="tel:+420724471067"><img src="img/phone-call.png" alt="phone" title="call me" width="15px"> +420 724 471 067</a>
-                </div>
+                    <a href="tel:+420724471067"><img src="/assets/img/phone-call.png" alt="phone" title="call me" width="15px">+420 724 471 067</a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-mikul%C3%A1%C5%A1t%C3%ADk-bb473b214/" target="_blank"><img src="/assets/img/linkedin.png" alt="linkedin" title="Linkedin" width="17px">Visit my Linkedin profile</a>
+                </p>
             </div>
 
-            <div class="Edu-skills">
-                <div class="border-bottom">
-                    <h2>Skills</h2>
-                </div>
-                <h3>Leanguages</h3>
-                <ul>
-                    <li><strong>Czech:</strong> Mother tongue</li>
-                    <li><strong>English:</strong> B2</li>
-                </ul>
+            <div class="edu-skills">
+                <h2>Skills</h2>
                 <h3>Software skills</h3>
                 <ul>
-                    <li><strong>Javascript, HTML, CSS:</strong> Novice</li>
+                    <li><strong>HTML, CSS, Javascript, Vue.js:</strong> <span>Novice</span></li>
+                    <li><strong>Npm, Yarn, Webpack, Git:</strong> Novice</li>
                     <li><strong>GIMP:</strong> Novice</li>
                     <li><strong>MS Office:</strong> Proficient</li>
                     <li><strong>AutoCAD:</strong> Expert</li>
                     <li><strong>ArchiCAD:</strong> Proficient</li>
+                </ul>
+                <h3>Leanguages</h3>
+                <ul>
+                    <li><strong>Czech:</strong> Mother tongue</li>
+                    <li><strong>English:</strong> B2</li>
                 </ul>
                 <h3>Others</h3>
                 <ul>
@@ -62,26 +66,28 @@
                 </ul>
             </div>
         </div>
-        <div class="flex-container">
-            <div class="Work-experience">
-                <div class="border-bottom">
-                    <h2>Work experience</h2>
-                </div>
-                <h3>January 2020 - Current</h3>
-                <a href="https://www.profiflex.cz/" target="_blank" class="logo-profilex"><img src="img/reference_logo_profiflex1.jpg" alt="logo-profiflex" title="www.profiflex.cz" width="200px"></a>
-                <h4><strong>Project manager</strong> in Kuřim, Czech Republic</h4>
-                <p><em>Over 100 projects, Responsibility for the implementation of projects, leading people, creating
-                        technical solution, communication with customers. Responsibility of the project economy</em></p>
-                <h3>June 2016 - December 2020</h3>
-                <h4><strong>Building designer</strong> in Zlín, Czech Republic</h4>
+    </main>
+    <aside>
+        <div class="container">
+            <h2>Work experience</h2>
+            <div class="work2">
+                <h4>January 2020 - November 2021</h3>
+                <a href="https://www.profiflex.cz/" target="_blank" class="logo-profilex"><img src="/assets/img/reference_logo_profiflex1.jpg" alt="logo-profiflex" title="www.profiflex.cz" width="200px"></a>
+                <h3><strong>Project manager</strong> in Kuřim, Czech Republic</h4>
+                <p><em>Over 130 projects, Responsibility for the implementation of projects, leading people, creating
+                        technical solution, communication with customers. Responsibility of the project economy, Teamwork.</em></p>
+            </div>
+                <div class="work1">
+                <h4>June 2016 - December 2020</h3>
+                <h3><strong>Building designer</strong> in Zlín, Czech Republic</h4>
                 <p><em>Over 75 projects, creating technical solution, communication with customers. Work alone.
                         Technical skill</em>
             </div>
         </div>
-    </main>
+    </aside>
 
     <footer>
-        <div class="footerborder">
+        <div class="container">
             <a href="#top" class="footer">Back on top</a>
         </div>
     </footer>
